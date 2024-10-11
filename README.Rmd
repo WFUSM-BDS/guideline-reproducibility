@@ -9,7 +9,7 @@ library(palmerpenguins)
 
 ```
 
-The goal of guideline-reproducibility is to introduce a method for package management that is necessary for reproducibility when collaborating in R. 
+The goal of guideline-reproducibility is to introduce a method for package management that is helpful for reproducibility when collaborating in R. 
 
 <BR>
 
