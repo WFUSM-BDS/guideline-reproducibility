@@ -253,9 +253,15 @@ The function will download and install all packages of the proper versions recor
 
 ### Try it yourself
 
-Clone `guidelines-reproducibility` on your own computer and run `renv::restore()` to install the currently recorded packages into your project library. Then experiment with adding new packages to `packages.R` or write R scripts using new packages to this project. Explore how you can use `renv::status` and `renv::snapshot` to get the lockfile back up to date.
+Clone `guidelines-reproducibility` on your own computer and run `renv::restore()` to install the currently recorded packages into your project library. When asked how you would like to proceed because the project has not been activated yet, choose
 
+```
+Activate the project and use the project library
+```
 
+Then experiment with adding new packages to `packages.R` or write R scripts using new packages to this project. Explore how you can use `renv::status` and `renv::snapshot` to get the lockfile back up to date.
+
+<BR>
 
 For more information on `renv`, see the following vignettes: 
 

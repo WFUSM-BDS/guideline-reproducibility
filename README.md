@@ -2,29 +2,30 @@ guideline-reproducibility
 ================
 
 The goal of guideline-reproducibility is to introduce a method for
-package management that is necessary for reproducibility when
+package management that is helpful for reproducibility when
 collaborating in R.
 
 <BR>
 
 ## Motivating Example
 
-Perhaps the most frustrating part of collaboration in R is due to
-differences in installed packages in collaborators’ system libraries. It
-is not uncommon for code that runs without error in your R session, to
-encounter an unusual error on a collaborator’s machine due to package
-version differences. This can result in time-consuming debugging that
-takes time away from more important tasks.
+Collaboration in R may become frustrating if differences in installed
+packages in collaborators’ system libraries cause code to fail. It is
+not uncommon for code that runs without error in your R session, to
+encounter an error on a collaborator’s machine due to package version
+differences. This can result in time-consuming debugging that takes time
+away from more important tasks.
 
 <BR>
 
 ## renv
 
-The `renv` package seeks to solve this issue by creating separate a
-project library for all packages that are installed and used in your
-project’s code. `renv` stores metadata for each package in a lockfile
-that can be shared and will allow others to install the same package
-versions into their project library.
+The `renv` package can solve this issue by creating separate a project
+library for all packages that are installed and used in your project’s
+code. `renv` stores metadata for each package in a lockfile that can be
+shared and will allow others to install the same package versions into
+their project library. Since the library is project-specific, you won’t
+have to worry about `renv` messing with your global library of packages.
 
 <BR>
 
@@ -275,10 +276,16 @@ versions recorded in the lockfile into the project-specific library.
 
 Clone `guidelines-reproducibility` on your own computer and run
 `renv::restore()` to install the currently recorded packages into your
-project library. Then experiment with adding new packages to
-`packages.R` or write R scripts using new packages to this project.
-Explore how you can use `renv::status` and `renv::snapshot` to get the
-lockfile back up to date.
+project library. When asked how you would like to proceed because the
+project has not been activated yet, choose
+
+    Activate the project and use the project library
+
+Then experiment with adding new packages to `packages.R` or write R
+scripts using new packages to this project. Explore how you can use
+`renv::status` and `renv::snapshot` to get the lockfile back up to date.
+
+<BR>
 
 For more information on `renv`, see the following vignettes:
 
