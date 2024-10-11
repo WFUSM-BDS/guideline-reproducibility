@@ -21,7 +21,7 @@ Collaboration in R may become frustrating if differences in installed packages i
 
 ## renv 
 
-The `renv` package seeks to solve this issue by creating separate a project library for all packages that are installed and used in your project's code. `renv` stores metadata for each package in a lockfile that can be shared and will allow others to install the same package versions into their project library.  
+The `renv` package can solve this issue by creating separate a project library for all packages that are installed and used in your project's code. `renv` stores metadata for each package in a lockfile that can be shared and will allow others to install the same package versions into their project library. Since the library is project-specific, you won't have to worry about `renv` messing with your global library of packages. 
 
 <BR>
 
