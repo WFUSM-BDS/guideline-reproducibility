@@ -15,7 +15,7 @@ The goal of guideline-reproducibility is to introduce a method for package manag
 
 ## Motivating Example
 
-Perhaps the most frustrating part of collaboration in R is due to differences in installed packages in collaborators' system libraries. It is not uncommon for code that runs without error in your R session, to encounter an unusual error on a collaborator's machine due to package version differences. This can result in time-consuming debugging that takes time away from more important tasks.
+Collaboration in R may become frustrating if differences in installed packages in collaborators' system libraries cause code to fail. It is not uncommon for code that runs without error in your R session, to encounter an error on a collaborator's machine due to package version differences. This can result in time-consuming debugging that takes time away from more important tasks.
 
 <BR>
 
